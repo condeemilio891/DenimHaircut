@@ -60,7 +60,10 @@ const toggleHome=() =>{
                         </NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="tourDates">TourDates
+                        <NavLinks to="tourDates"
+                          smooth={true} duration={500} spy={true}
+                          exact="true" offset={-80}
+                        >TourDates
 
                         </NavLinks>
                     </NavItem>
