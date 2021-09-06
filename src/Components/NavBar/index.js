@@ -13,6 +13,8 @@ import { Nav,
 } from './navbarElements'
 import Image from 'react-bootstrap/Image'
 import Jackalope from "../../assets/images/jackalope.png"
+import { animateScroll as scroll } from 'react-scroll'
+
 const Navbar = ({toggle}) => {
 
 const [scrollNav, setScrollNav]= useState(false)
@@ -30,14 +32,17 @@ useEffect (()=>{
     window.addEventListener('scroll',changeNav)
 },[])
 
+const toggleHome=() =>{
+    scroll.scrollToTop();
+};
 
     return (
         <>
 
         <Nav scrollNav={scrollNav}>
             <NavbarContainer>
-                <NavLogo to="/">
-                    <Image src={Jackalope}/>
+                <NavLogo to="/" onClick={toggleHome}>
+                    <Image to="/" onClick={toggleHome} src={Jackalope}/>
                     denim-haircut
                 </NavLogo>
                 <MobileIcon onClick={toggle}>
@@ -46,7 +51,10 @@ useEffect (()=>{
                 <NavMenu>
 
                     <NavItem>
-                        <NavLinks to="about">About
+                        <NavLinks to="about"
+                        smooth={true} duration={500} spy={true}
+                        exact="true" offset={-80}
+                        >About
 
                         </NavLinks>
                     </NavItem>

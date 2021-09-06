@@ -18,7 +18,7 @@ const HeroSection = () => {
                 mp4'/>
             </HeroBg>
             <HeroContent>
-                <HeroH1>Denium Haircut</HeroH1>
+                <HeroH1>Denim Haircut</HeroH1>
                 <HeroP></HeroP>
                 <HeroBtnWrapper>
                     <Button to='about'onMouseEnter={onHover}
