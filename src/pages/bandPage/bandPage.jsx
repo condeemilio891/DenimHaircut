@@ -4,9 +4,10 @@ import SideBar from "../../Components/SideBar"
 import NavBar from "../../Components/NavBar"
 import HeroSection from '../../Components/HeroSection'
 import InfoSection from "../../Components/InfoSection"
-import YoutubeEmbed from "../../Components/VideoCardSection/YoutubeEmbed"
+import TourDates from '../../Components/TourDates'
 import MyCarousel from '../../Components/Carosel/Carousel'
 import { homeObjOne } from '../../Components/InfoSection/Data'
+import { tourRouterData } from '../../Components/TourDates/Data'
 const Home = () => {
     const[isOpen, setIsOpen]=useState(false)
 
@@ -21,6 +22,7 @@ const Home = () => {
         <HeroSection/>
         <MyCarousel/>
         <InfoSection {...homeObjOne}/>
+        <TourDates {...tourRouterData}/>
         
        
       
