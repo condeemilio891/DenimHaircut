@@ -1,22 +1,52 @@
 import React from 'react'
-import { Button } from 'react-scroll'
+import { Button } from '../ButtonElement'
 
-const InfoSection = () => {
+import { InfoContainer, 
+    InfoWrapper, 
+    InfoRow,
+     Column1,
+      Column2,
+TextWrapper,
+TopLine,
+Heading,
+Subtitle,
+BtnWrap,
+ImgWrap,
+  } from './InfoElements'
+import altImage from '../../assets/images/PPic.svg'
+import Image from 'react-bootstrap/Image'
+
+const InfoSection = ({lightBg,id,imgStart,topLine,lightText,
+headLine,darkText,description,buttonLabel,img,alt,primary,dark}) => {
     return (
         <>
-          <InfoContainer id={id}>
+          <InfoContainer lightBg={lightBg} id={id}>
               <InfoWrapper>
-                <InfoRow>
-                    <InfoColumn1>
+                <InfoRow imgStart={imgStart}>
+                    <Column1>
                         <TextWrapper>
-                            <TopLine>Denim Haircut</TopLine>
-                            <Heading> Denim Haircut</Heading>
-                            <Subtitle>Subtitle</Subtitle>
+                            <TopLine>{topLine}</TopLine>
+                            <Heading lightText={lightText}>{headLine}</Heading>
+                            <Subtitle darkText={darkText}>{description}</Subtitle>
                             <BtnWrap>
-                                <Button to='home'>Button</Button>
+                                <Button to='home'
+                                smooth={true}
+                                duration={true}
+                                spy={true}
+                                exact="true"
+                                offset={-80}
+                                primary={primary ? 1 : 0}
+                                dark={dark ? 1 : 0}
+                                >{buttonLabel} </Button>
                             </BtnWrap>
                         </TextWrapper>
-                    </InfoColumn1>
+                    </Column1>
+                    <Column2>
+                    
+                    <Image src={altImage}/>
+                    
+                    
+                    </Column2>
 
                 </InfoRow>
 
