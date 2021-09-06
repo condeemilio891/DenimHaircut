@@ -14,6 +14,7 @@ import { Nav,
 import Image from 'react-bootstrap/Image'
 import Jackalope from "../../assets/images/jackalope.png"
 import { animateScroll as scroll } from 'react-scroll'
+import {FaFacebookSquare} from "react-icons/fa"
 
 const Navbar = ({toggle}) => {
 
@@ -69,8 +70,9 @@ const toggleHome=() =>{
                         </NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="contact">contact
-
+                
+                        <NavLinks to="contact">
+                        <FaFacebookSquare />
                         </NavLinks>
                     </NavItem>
                 </NavMenu>

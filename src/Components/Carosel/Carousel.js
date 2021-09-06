@@ -2,9 +2,11 @@ import React from 'react';
 import '@brainhubeu/react-carousel/lib/style.css';
 import YoutubeEmbed from "../VideoCardSection/YoutubeEmbed"
 import Carousel, { slidesToShowPlugin } from '@brainhubeu/react-carousel';
+import { CarouselWrapper } from './CarouselElements';
 
 const MyCarousel = () => (
-<div style={{ display: 'flex', justifyContent: 'center', flexFlow: 'row', alignContent: 'center', textAlign: 'center' }}>
+<>
+  <CarouselWrapper>     
   <Carousel plugins={['arrows']}
  >
     <YoutubeEmbed embedId="f_6_m5PczBo"/>
@@ -12,7 +14,8 @@ const MyCarousel = () => (
     <YoutubeEmbed embedId="u6Khp12BeOU"/>
     
   </Carousel>
-  </div>
+  </CarouselWrapper>
+  </>
 );
 
 export default MyCarousel;

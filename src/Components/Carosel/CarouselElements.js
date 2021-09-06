@@ -1,8 +1,11 @@
 import styled from "styled-components";
 
-export const img= styled.img`
 
+export const CarouselWrapper = styled.div `
 
+@media screen and (max-width:480px){
+    display:none;
+}
 
 
 `
