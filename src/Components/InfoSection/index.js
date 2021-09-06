@@ -12,7 +12,7 @@ Heading,
 Subtitle,
 BtnWrap,
 ImgWrap,
-  } from './InfoElements'
+Img  } from './InfoElements'
 import altImage from '../../assets/images/PPic.svg'
 import Image from 'react-bootstrap/Image'
 
@@ -42,9 +42,9 @@ headLine,darkText,description,buttonLabel,img,alt,primary,dark}) => {
                         </TextWrapper>
                     </Column1>
                     <Column2>
-                    
-                    <Image src={altImage}/>
-                    
+                    <ImgWrap>
+                    <Img src={altImage} alt={alt}/>
+                    </ImgWrap>
                     
                     </Column2>
 
