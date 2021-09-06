@@ -7,8 +7,9 @@ import YoutubeEmbed from "../VideoCardSection/YoutubeEmbed"
 const MyCarousel = () => (
   <Carousel plugins={['arrows']}>
     <YoutubeEmbed embedId="f_6_m5PczBo"/>
-    <YoutubeEmbed embedId="f_6_m5PczBo"/>
-    <YoutubeEmbed embedId="f_6_m5PczBo"/>
+    <YoutubeEmbed embedId="S8GQkkzyhsw"/>
+    <YoutubeEmbed embedId="u6Khp12BeOU"/>
+    
   </Carousel>
 );
 

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import {FaBars} from 'react-icons/fa'
 import { Nav, 
     NavbarContainer, 
@@ -11,14 +11,33 @@ import { Nav,
     NavBtnLink
 
 } from './navbarElements'
-
+import Image from 'react-bootstrap/Image'
+import Jackalope from "../../assets/images/jackalope.png"
 const Navbar = ({toggle}) => {
+
+const [scrollNav, setScrollNav]= useState(false)
+
+const changeNav = ()=>{
+    if(window.scrollY >= 80) {
+        setScrollNav(true)
+    } else{
+        setScrollNav(false)
+
+    }
+}
+
+useEffect (()=>{
+    window.addEventListener('scroll',changeNav)
+},[])
+
+
     return (
         <>
 
-        <Nav>
+        <Nav scrollNav={scrollNav}>
             <NavbarContainer>
                 <NavLogo to="/">
+                    <Image src={Jackalope}/>
                     denim-haircut
                 </NavLogo>
                 <MobileIcon onClick={toggle}>
@@ -32,12 +51,12 @@ const Navbar = ({toggle}) => {
                         </NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="discover">Discover
+                        <NavLinks to="tourDates">TourDates
 
                         </NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="services">services
+                        <NavLinks to="services">
 
                         </NavLinks>
                     </NavItem>
@@ -47,9 +66,7 @@ const Navbar = ({toggle}) => {
                         </NavLinks>
                     </NavItem>
                 </NavMenu>
-                <NavBtn>
-                    <NavBtnLink to="/signin">Sign IN</NavBtnLink>
-                </NavBtn>
+               
             </NavbarContainer>
         </Nav>
         </>
