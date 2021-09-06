@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import {FaBars} from 'react-icons/fa'
 import { Nav, 
     NavbarContainer, 
@@ -11,14 +11,39 @@ import { Nav,
     NavBtnLink
 
 } from './navbarElements'
+import Image from 'react-bootstrap/Image'
+import Jackalope from "../../assets/images/jackalope.png"
+import { animateScroll as scroll } from 'react-scroll'
+import {FaFacebookSquare} from "react-icons/fa"
 
 const Navbar = ({toggle}) => {
+
+const [scrollNav, setScrollNav]= useState(false)
+
+const changeNav = ()=>{
+    if(window.scrollY >= 80) {
+        setScrollNav(true)
+    } else{
+        setScrollNav(false)
+
+    }
+}
+
+useEffect (()=>{
+    window.addEventListener('scroll',changeNav)
+},[])
+
+const toggleHome=() =>{
+    scroll.scrollToTop();
+};
+
     return (
         <>
 
-        <Nav>
+        <Nav scrollNav={scrollNav}>
             <NavbarContainer>
-                <NavLogo to="/">
+                <NavLogo to="/" onClick={toggleHome}>
+                    <Image to="/" onClick={toggleHome} src={Jackalope}/>
                     denim-haircut
                 </NavLogo>
                 <MobileIcon onClick={toggle}>
@@ -27,29 +52,31 @@ const Navbar = ({toggle}) => {
                 <NavMenu>
 
                     <NavItem>
-                        <NavLinks to="about">About
+                        <NavLinks to="about"
+                        smooth={true} duration={500} spy={true}
+                        exact="true" offset={-80}
+                        >About
 
                         </NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="discover">Discover
+                        <NavLinks to="tourDates">TourDates
 
                         </NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="services">services
+                        <NavLinks to="services">
 
                         </NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="contact">contact
-
+                
+                        <NavLinks to="contact">
+                        <FaFacebookSquare />
                         </NavLinks>
                     </NavItem>
                 </NavMenu>
-                <NavBtn>
-                    <NavBtnLink to="/signin">Sign IN</NavBtnLink>
-                </NavBtn>
+               
             </NavbarContainer>
         </Nav>
         </>

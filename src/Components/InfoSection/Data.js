@@ -4,11 +4,11 @@ export const homeObjOne = {
   lightBg: false,
   lightText:true,
   lightTextDesc:true,
-  topLine: 'Premium Bank',
+  topLine: 'About',
   headLine: "Unlimited Transactinsl lkafdjkdjaflfa",
   description: " fdakjfldkajdkljfp;alfd;sf;dsf;ldsf;ldmf;lamf;lmf;lmfa;lmf;am;fmafa;mf;amf"
 , 
-buttonLabel: 'get started',
+buttonLabel: 'Concert dates',
 imgStart: false,
 img: require('../../images/svg-1.svg'),
 alt: 'Car',

@@ -14,7 +14,6 @@ BtnWrap,
 ImgWrap,
 Img  } from './InfoElements'
 import altImage from '../../assets/images/PPic.svg'
-import Image from 'react-bootstrap/Image'
 
 const InfoSection = ({lightBg,id,imgStart,topLine,lightText,
 headLine,darkText,description,buttonLabel,img,alt,primary,dark}) => {
@@ -29,7 +28,7 @@ headLine,darkText,description,buttonLabel,img,alt,primary,dark}) => {
                             <Heading lightText={lightText}>{headLine}</Heading>
                             <Subtitle darkText={darkText}>{description}</Subtitle>
                             <BtnWrap>
-                                <Button to='home'
+                                <Button to='tourDates'
                                 smooth={true}
                                 duration={true}
                                 spy={true}
