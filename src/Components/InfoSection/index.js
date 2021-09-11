@@ -14,6 +14,7 @@ BtnWrap,
 ImgWrap,
 Img  } from './InfoElements'
 import altImage from '../../assets/images/PPic.svg'
+import { FaInstagramSquare } from 'react-icons/fa'
 
 const InfoSection = ({lightBg,id,imgStart,topLine,lightText,
 headLine,darkText,description,buttonLabel,img,alt,primary,dark}) => {
@@ -25,8 +26,29 @@ headLine,darkText,description,buttonLabel,img,alt,primary,dark}) => {
                     <Column1>
                         <TextWrapper>
                             <TopLine>{topLine}</TopLine>
-                            <Heading lightText={lightText}>{headLine}</Heading>
-                            <Subtitle darkText={darkText}>{description}</Subtitle>
+                        <Heading lightText={lightText}>{headLine}</Heading>
+                            
+                            <Subtitle >Drums - Cody Gowl </Subtitle>
+                                
+                                <a className="sidebarAnchor" href="https://www.instagram.com/cgowl4/?hl=en">
+                                <FaInstagramSquare color="#5851db"/>
+                                </a>
+
+
+                            <Subtitle>Vocals/Guitar - Julian Madrid</Subtitle>
+                                
+                                
+                            <a className="sidebarAnchor" href="https://www.instagram.com/julianmadrid00/?hl=en">
+                                <FaInstagramSquare color="#5851db"/>
+                                </a>
+
+
+                            <Subtitle>Live Bass - Gabe Zamora"</Subtitle>
+                               
+                            <a className="sidebarAnchor" href="https://www.instagram.com/antwan.the.don/?hl=en">
+                                <FaInstagramSquare color="#5851db"/>
+                                </a>
+              
                             <BtnWrap>
                                 <Button to='tourDates'
                                 smooth={true}

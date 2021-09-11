@@ -5,9 +5,9 @@ export const homeObjOne = {
   lightText:true,
   lightTextDesc:true,
   topLine: 'About',
-  headLine: "Unlimited Transactinsl lkafdjkdjaflfa",
-  description: " fdakjfldkajdkljfp;alfd;sf;dsf;ldsf;ldmf;lamf;lmf;lmfa;lmf;am;fmafa;mf;amf"
-, 
+  headLine: "Austin-based psych/alt rock band",
+                              
+
 buttonLabel: 'Concert dates',
 imgStart: false,
 img: require('../../images/svg-1.svg'),
