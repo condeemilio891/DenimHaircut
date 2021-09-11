@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/DenimHaircut/static/css/main.9821a57a.chunk.css",
+    "main.js": "/DenimHaircut/static/js/main.42981f53.chunk.js",
+    "main.js.map": "/DenimHaircut/static/js/main.42981f53.chunk.js.map",
+    "runtime-main.js": "/DenimHaircut/static/js/runtime-main.8d799dbc.js",
+    "runtime-main.js.map": "/DenimHaircut/static/js/runtime-main.8d799dbc.js.map",
+    "static/css/2.dab86632.chunk.css": "/DenimHaircut/static/css/2.dab86632.chunk.css",
+    "static/js/2.807e3229.chunk.js": "/DenimHaircut/static/js/2.807e3229.chunk.js",
+    "static/js/2.807e3229.chunk.js.map": "/DenimHaircut/static/js/2.807e3229.chunk.js.map",
+    "index.html": "/DenimHaircut/index.html",
+    "static/css/2.dab86632.chunk.css.map": "/DenimHaircut/static/css/2.dab86632.chunk.css.map",
+    "static/css/main.9821a57a.chunk.css.map": "/DenimHaircut/static/css/main.9821a57a.chunk.css.map",
+    "static/js/2.807e3229.chunk.js.LICENSE.txt": "/DenimHaircut/static/js/2.807e3229.chunk.js.LICENSE.txt",
+    "static/media/DenimHaircutBackgroundVid.f1b2257f.mp4": "/DenimHaircut/static/media/DenimHaircutBackgroundVid.f1b2257f.mp4",
+    "static/media/PPic.4d779fb0.svg": "/DenimHaircut/static/media/PPic.4d779fb0.svg",
+    "static/media/jackalope.595be84a.png": "/DenimHaircut/static/media/jackalope.595be84a.png",
+    "static/media/svg-1.svg": "/DenimHaircut/static/media/svg-1.4d779fb0.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8d799dbc.js",
+    "static/css/2.dab86632.chunk.css",
+    "static/js/2.807e3229.chunk.js",
+    "static/css/main.9821a57a.chunk.css",
+    "static/js/main.42981f53.chunk.js"
+  ]
+}
