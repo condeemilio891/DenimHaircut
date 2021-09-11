@@ -7,7 +7,7 @@ SideBarWrapper,
 SideBarLink,sidebarIconUl, SideBarMenu } from './sidebarElements'
 
 import { NavIconUl } from '../NavBar/navbarElements'
-import { FaFacebookSquare,FaInstagramSquare,FaYoutubeSquare,FaTwitterSquare } from 'react-icons/fa'
+import { FaFacebookSquare,FaInstagramSquare,FaYoutubeSquare,FaTwitterSquare,FaSoundcloud } from 'react-icons/fa'
 import "./style.css"
 const SideBar = ({isOpen,toggle}) => {
     return (
@@ -34,7 +34,7 @@ const SideBar = ({isOpen,toggle}) => {
                     <sidebarIconUl>
 
 
-                    <a className="sidebarAnchor" href="https://www.youtube.com/channel/UCf3s6poDVE5KHEqUI3sHJhQ/playlists">
+                    <a className="sidebarAnchor" href="https://www.instagram.com/denimhaircut/?hl=en">
                     <FaInstagramSquare color="#5851db"  />
                     </a >
 
@@ -43,13 +43,13 @@ const SideBar = ({isOpen,toggle}) => {
                             <FaYoutubeSquare color='#ff0000' />
 
                             </a>
-                            <a className= "sidebarAnchor"href="https://www.youtube.com/channel/UCf3s6poDVE5KHEqUI3sHJhQ/playlists">
-                            <FaFacebookSquare color='#1877f2'/>
+                            <a className= "sidebarAnchor"href="https://soundcloud.com/denim-haircut">
+                            <FaSoundcloud color='#FE5000'/>
 
                             </a>
 
 
-                            <a className= "sidebarAnchor"href="https://www.youtube.com/channel/UCf3s6poDVE5KHEqUI3sHJhQ/playlists">
+                            <a className= "sidebarAnchor"href="https://twitter.com/denimhaircut?lang=en">
                             <FaTwitterSquare color='#1da1f2'/>
 
                             </a>

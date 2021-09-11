@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import {FaBars, FaTwitterSquare,FaFacebookSquare,FaInstagramSquare,FaYoutubeSquare} from 'react-icons/fa'
+import {FaBars, FaTwitterSquare,FaFacebookSquare,FaInstagramSquare,FaYoutubeSquare,FaSoundcloud} from 'react-icons/fa'
 import { Nav, 
     NavbarContainer, 
     NavLogo, 
@@ -78,7 +78,7 @@ const toggleHome=() =>{
                     <NavIconUl>
 
 
-                    <a className="navAnchor" href="https://www.youtube.com/channel/UCf3s6poDVE5KHEqUI3sHJhQ/playlists">
+                    <a className="navAnchor" href="https://www.instagram.com/denimhaircut/?hl=en">
                     <FaInstagramSquare color="#5851db"  />
                     </a >
 
@@ -87,13 +87,13 @@ const toggleHome=() =>{
                             <FaYoutubeSquare color='#ff0000' />
 
                             </a>
-                            <a className= "navAnchorE"href="https://www.youtube.com/channel/UCf3s6poDVE5KHEqUI3sHJhQ/playlists">
-                            <FaFacebookSquare color='#1877f2'/>
+                            <a className= "navAnchorE"href="https://soundcloud.com/denim-haircut">
+                            <FaSoundcloud color='#FE5000'/>
 
                             </a>
 
 
-                            <a className= "navAnchorE"href="https://www.youtube.com/channel/UCf3s6poDVE5KHEqUI3sHJhQ/playlists">
+                            <a className= "navAnchorE"href="https://twitter.com/denimhaircut?lang=en">
                             <FaTwitterSquare color='#1da1f2'/>
 
                             </a>
