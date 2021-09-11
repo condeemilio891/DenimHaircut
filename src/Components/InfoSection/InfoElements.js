@@ -88,9 +88,11 @@ color: ${({lightText})=>(lightText ? `#f7f8fa`: '#010606')
 export const Subtitle= styled.p`
 max-width: 440px;
 margin-bottom: 35px;
-font-size: 18px;
+font-size: 30px;
 line-height: 24px;
-color: ${({darkText})=> (darkText ? '#010606': '#fff')};
+padding-right:4rem;
+margin-right: 10rem;
+color: #D7C0AD;
 `
 
 export const BtnWrap=styled.div`

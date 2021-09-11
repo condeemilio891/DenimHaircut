@@ -42,11 +42,11 @@ overflow:hidden;
 export const VideoBg=styled.video`
 width:100%;
 height: 100%;
--o-object-fit:cover;
-object-fit: cover;
-background: #232a34;
-
-`;
+-o-object-fit:contain;
+object-fit: contain;
+background: rgb(143,98,69);
+background: radial-gradient(circle, rgba(143,98,69,1) 4%, rgba(54,54,54,1) 91%);
+`
 
 export const HeroContent= styled.div`
 z-index:3;

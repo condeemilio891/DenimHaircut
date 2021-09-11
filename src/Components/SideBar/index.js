@@ -4,7 +4,11 @@ Icon,
 CloseIcon,
 SideBarWrapper,
 
-SideBarLink,SideBtnWrap,SideBarRoute, SideBarMenu } from './sidebarElements'
+SideBarLink,sidebarIconUl, SideBarMenu } from './sidebarElements'
+
+import { NavIconUl } from '../NavBar/navbarElements'
+import { FaFacebookSquare,FaInstagramSquare,FaYoutubeSquare,FaTwitterSquare } from 'react-icons/fa'
+import "./style.css"
 const SideBar = ({isOpen,toggle}) => {
     return (
         <SideBarContainer isOpen={isOpen} onClick={toggle}>
@@ -25,11 +29,36 @@ const SideBar = ({isOpen,toggle}) => {
                     <SideBarLink to="sign-up" onClick={toggle}>
                     Tour Dates
                     </SideBarLink>
+
+                    
+                    <sidebarIconUl>
+
+
+                    <a className="sidebarAnchor" href="https://www.youtube.com/channel/UCf3s6poDVE5KHEqUI3sHJhQ/playlists">
+                    <FaInstagramSquare color="#5851db"  />
+                    </a >
+
+                    
+                    <a className= "sidebarAnchor"href="https://www.youtube.com/channel/UCf3s6poDVE5KHEqUI3sHJhQ/playlists">
+                            <FaYoutubeSquare color='#ff0000' />
+
+                            </a>
+                            <a className= "sidebarAnchor"href="https://www.youtube.com/channel/UCf3s6poDVE5KHEqUI3sHJhQ/playlists">
+                            <FaFacebookSquare color='#1877f2'/>
+
+                            </a>
+
+
+                            <a className= "sidebarAnchor"href="https://www.youtube.com/channel/UCf3s6poDVE5KHEqUI3sHJhQ/playlists">
+                            <FaTwitterSquare color='#1da1f2'/>
+
+                            </a>
+                        
+                
+                    </sidebarIconUl>
                 </SideBarMenu>
 
-                {/* <SideBtnWrap>
-                    <SideBarRoute to="/"> Sign In</SideBarRoute>
-                </SideBtnWrap> */}
+            
 
             </SideBarWrapper>
         </SideBarContainer>

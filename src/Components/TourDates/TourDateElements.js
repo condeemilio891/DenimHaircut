@@ -27,31 +27,31 @@ color: #fff;
 margin: 5px 0;
 transition: .5s;
 &:nth-child(1) {
-      background: #590d22;
+      background: #8f6245;
    };
    &:nth-child(2) {
-      background: #800f2f;
+      background: #C0AA8D;
    };
    &:nth-child(3) {
-      background: #a4133c;
+      background: #D7C0AD;
    };
    &:nth-child(4) {
-      background: #c9184a;
+      background: #363636;
    };
    &:nth-child(5) {
-      background: #ff4d6d
+      background: #f3f3f3;
    };
    &:nth-child(6) {
-      background: #ff758f;
+      background: #8f6245;
    };
    &:nth-child(7) {
-      background: #ff8fa3;
+      background: #363636
    };
    &:nth-child(8) {
-      background: #ffb3c1;
+      background: #C0AA8D;
    };
    &:nth-child(9) {
-      background: #ffccd5;
+      background: #D7C0AD;
    };
    &:hover{
        transform: scale()(1.06);

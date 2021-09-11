@@ -86,3 +86,13 @@ text-decoration: none;
     color: #010606;
 }
 `
+
+export const sidebarIconUl = styled.div`
+
+
+position:relative;
+display: flex;
+z-index: 2;
+ 
+
+`
