@@ -67,3 +67,4 @@
 .navAnchor:hover::before{
     transform: skewX(45deg) translateX(-75px);
 }
+

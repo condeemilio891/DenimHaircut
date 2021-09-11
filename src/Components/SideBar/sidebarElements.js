@@ -87,3 +87,12 @@ text-decoration: none;
 }
 `
 
+export const sidebarIconUl = styled.div`
+
+
+position:relative;
+display: flex;
+z-index: 2;
+ 
+
+`
