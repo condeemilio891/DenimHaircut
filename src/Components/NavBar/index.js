@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import {FaBars} from 'react-icons/fa'
+import {FaBars, FaTwitterSquare,FaFacebookSquare,FaInstagramSquare,FaYoutubeSquare} from 'react-icons/fa'
 import { Nav, 
     NavbarContainer, 
     NavLogo, 
@@ -7,14 +7,15 @@ import { Nav,
     NavMenu,
     NavItem,
     NavLinks,
-    NavBtn,
-    NavBtnLink
+    NavIconUl,
+    Img
 
 } from './navbarElements'
-import Image from 'react-bootstrap/Image'
+import  "./style.css"
 import Jackalope from "../../assets/images/jackalope.png"
 import { animateScroll as scroll } from 'react-scroll'
-import {FaFacebookSquare} from "react-icons/fa"
+
+
 
 const Navbar = ({toggle}) => {
 
@@ -43,8 +44,8 @@ const toggleHome=() =>{
         <Nav scrollNav={scrollNav}>
             <NavbarContainer>
                 <NavLogo to="/" onClick={toggleHome}>
-                    <Image to="/" onClick={toggleHome} src={Jackalope}/>
-                    denim-haircut
+                    <Img to="/" onClick={toggleHome} src={Jackalope}/>
+                  
                 </NavLogo>
                 <MobileIcon onClick={toggle}>
                     <FaBars/>
@@ -63,25 +64,49 @@ const toggleHome=() =>{
                         <NavLinks to="tourDates"
                           smooth={true} duration={500} spy={true}
                           exact="true" offset={-80}
-                        >TourDates
+                        >Concert Dates
 
                         </NavLinks>
                     </NavItem>
                     <NavItem>
                         <NavLinks to="services">
+                           
+                        </NavLinks>
+                    </NavItem>
 
-                        </NavLinks>
-                    </NavItem>
-                    <NavItem>
+
+                    <NavIconUl>
+
+
+                    <a className="navAnchor" href="https://www.youtube.com/channel/UCf3s6poDVE5KHEqUI3sHJhQ/playlists">
+                    <FaInstagramSquare color="#5851db"  />
+                    </a >
+
+                    
+                    <a className= "navAnchorE"href="https://www.youtube.com/channel/UCf3s6poDVE5KHEqUI3sHJhQ/playlists">
+                            <FaYoutubeSquare color='#ff0000' />
+
+                            </a>
+                            <a className= "navAnchorE"href="https://www.youtube.com/channel/UCf3s6poDVE5KHEqUI3sHJhQ/playlists">
+                            <FaFacebookSquare color='#1877f2'/>
+
+                            </a>
+
+
+                            <a className= "navAnchorE"href="https://www.youtube.com/channel/UCf3s6poDVE5KHEqUI3sHJhQ/playlists">
+                            <FaTwitterSquare color='#1da1f2'/>
+
+                            </a>
+                        
                 
-                        <NavLinks to="contact">
-                        <FaFacebookSquare />
-                        </NavLinks>
-                    </NavItem>
+                    </NavIconUl>
+                
+
                 </NavMenu>
                
             </NavbarContainer>
         </Nav>
+       
         </>
     )
 }

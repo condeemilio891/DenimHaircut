@@ -20,11 +20,10 @@ const Home = () => {
         <SideBar isOpen={isOpen} toggle={toggle}/>
         <NavBar toggle={toggle}/>
         <HeroSection/>
-        <MyCarousel/>
+
         <InfoSection {...homeObjOne}/>
         <TourDates {...tourRouterData}/>
-        
-       
+        <MyCarousel/>
       
         </>
     )
