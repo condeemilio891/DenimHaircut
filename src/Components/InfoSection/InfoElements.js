@@ -21,7 +21,7 @@ export const InfoWrapper = styled.div`
  max-width: 1100px;
  margin-right: auto;
  margin-left:auto;
- padding: 0 24px;
+ padding: 0 15px;
  justify-content: center;
 `
 
@@ -42,14 +42,14 @@ grid-template-areas: ${({imgStart})=>(imgStart ? `'col1
 
 export const Column1= styled.div`
   margin-bottom:15px;
-  padding: 0 15px;
+  padding: 0 25px;
   grid-area: col1;
 `
 
 
 export const Column2= styled.div`
   margin-bottom:15px;
-  padding: 0 15px;
+  padding: 0 25px;
   grid-area: col2;
   background-color: white;
 `
@@ -63,8 +63,8 @@ padding-bottom: 60px;
 
 
 export const TopLine= styled.p`
-color: red;
-font-size: 16px;
+color: #8f6245;;
+font-size: 25px;
 line-height: 16px;
 font-weight: 700;
 letter-spacing: 1.4px;
@@ -79,6 +79,7 @@ line-height: 1.1;
 font-weight: 600;
 color: ${({lightText})=>(lightText ? `#f7f8fa`: '#010606')
 };
+text-transform: uppercase;
 
 @media screen and (max-width: 480px){
     font-size: 32px
@@ -87,11 +88,11 @@ color: ${({lightText})=>(lightText ? `#f7f8fa`: '#010606')
 
 export const Subtitle= styled.p`
 max-width: 440px;
-margin-bottom: 35px;
-font-size: 30px;
+margin-bottom: 12px;
+font-size: 17px;
 line-height: 24px;
-padding-right:4rem;
-margin-right: 10rem;
+/* padding-right:4rem;
+margin-right: 10rem; */
 color: #D7C0AD;
 `
 
@@ -109,7 +110,7 @@ export const ImgWrap= styled.div `
 
 export const Img =styled.img`
 width:100%;
-margin: 0 0 10px 0;
+margin: 15px 0 25px 0;
 padding-right: 0;
 background-image: url("../../assets/images/PPic.svg");
 

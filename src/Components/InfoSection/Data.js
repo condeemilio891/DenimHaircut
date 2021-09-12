@@ -5,7 +5,7 @@ export const homeObjOne = {
   lightText:true,
   lightTextDesc:true,
   topLine: 'About',
-  headLine: "Austin-based psych/alt rock band",
+  headLine: "Austin based Psych/Alt rock band",
                               
 
 buttonLabel: 'Concert dates',
