@@ -26,3 +26,26 @@
     transform: translateY(-20px);
 
 }
+.infoAnchor
+{
+    position:relative;
+    width:17px;
+    height: 17px;
+    display: inline-block;
+    border-radius: 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: purple;
+    font-size: 2em;
+    border: 1px solid red;
+    border-right: 1px solid blue;
+    border-bottom: 1px solid orange;
+    box-shadow:  0 5px 45px rgba(0,0,0,0.1);
+    backdrop-filter: blur(2px);
+    transition: 0.5s;
+ 
+
+}
+

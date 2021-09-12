@@ -36,16 +36,16 @@ transition: .5s;
       background: #D7C0AD;
    };
    &:nth-child(4) {
-      background: #363636;
-   };
-   &:nth-child(5) {
-      background: #f3f3f3;
-   };
-   &:nth-child(6) {
       background: #8f6245;
    };
+   &:nth-child(5) {
+      background: #8f6245;
+   };
+   &:nth-child(6) {
+      background: #C0AA8D;
+   };
    &:nth-child(7) {
-      background: #363636
+      background:  #D7C0AD;
    };
    &:nth-child(8) {
       background: #C0AA8D;
