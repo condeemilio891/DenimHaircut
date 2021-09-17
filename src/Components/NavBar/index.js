@@ -44,7 +44,7 @@ const toggleHome=() =>{
         <Nav scrollNav={scrollNav}>
             <NavbarContainer>
                 <NavLogo to="/" onClick={toggleHome}>
-                    <Img to="/" onClick={toggleHome} src={Jackalope}/>
+                    <Img to="/" onClick={toggleHome} src={Jackalope} scrollNav={scrollNav}/>
                   
                 </NavLogo>
                 <MobileIcon onClick={toggle}>
@@ -69,8 +69,10 @@ const toggleHome=() =>{
                         </NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="services">
-                           
+                        <NavLinks to="videos"
+                        smooth={true} duration={500} spy={true}
+                        exact="true" offset={-80}>
+                           Videos
                         </NavLinks>
                     </NavItem>
 

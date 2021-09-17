@@ -4,8 +4,8 @@ import{Link as LinkS} from "react-scroll"
 
 
 export const Nav = styled.nav`
-    /* background: ${({scrollNav})=>(scrollNav ? "#000" : "transparent")}; */
-    background: #000;
+    background: ${({scrollNav})=>(scrollNav ? "#000" : "transparent")};
+    /* background: #000; */
     height: 80px;
     margin-top:-80px;
     display:flex;
@@ -135,6 +135,6 @@ export const NavBtnLink= styled(LinkR)`
 
 export const Img = styled.img` 
 border-radius:50%;
-height: 5rem;
-color: transparent;
+/* height: 5rem; */
+height:${({scrollNav})=>(scrollNav ? "5rem" : "0rem")}
 `

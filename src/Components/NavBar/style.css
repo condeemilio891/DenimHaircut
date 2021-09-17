@@ -51,7 +51,10 @@
 
 }
 
-.navAnchor::before{
+
+
+/* below is a shine effect I */
+/* .navAnchor::before{
     content: '';
     position:absolute;
     top: 0;
@@ -67,4 +70,4 @@
 .navAnchor:hover::before{
     transform: skewX(45deg) translateX(-75px);
 }
-
+ */
