@@ -11,22 +11,22 @@ const VideoCardSection = (id) => {
         
         <Container maxWidth="md" id="videos">
           
-        <Box sx={{ bgcolor: '#cfe8fc', height: '100vh' }} >
+        <Box sx={{ bgcolor: 'black', height: '100vh' }} >
            
         <MainTitle>Videos</MainTitle>
 
-        <Grid container spacing={2}>
+        <Grid container spacing={1}>
 
-                    <Grid item xs={6}>
+                    <Grid item md={6} xs={12}>
                     <CardContainer>
                         <VideoContainer>
-                                
-                            <YoutubeEmbed  embedId="f_6_m5PczBo"/>
-                            <Box sx={{ bgcolor:"black", height:'5rem', width:"26.2rem", }}>
+                        <Box sx={{ bgcolor:"black", height:'5rem', width:"26.2rem", }}>
                             <VideoCardTitle>
-                                    Video 1
+                                    War Pigs Cover
                             </VideoCardTitle>
                             </Box>
+                            <YoutubeEmbed  embedId="f_6_m5PczBo"/>
+                          
                             </VideoContainer>
 
                         
@@ -35,16 +35,16 @@ const VideoCardSection = (id) => {
 
 
 
-                    <Grid item xs={6}>
-                    <CardContainer>
+                    <Grid item md={6} xs={12}>
+                    <CardContainer >
                         <VideoContainer>
-                                
-                            <YoutubeEmbed  embedId="f_6_m5PczBo"/>
-                            <Box sx={{ bgcolor:"black", height:'5rem', width:"26.2rem", }}>
+                        <Box sx={{ bgcolor:"black", height:'5rem', width:"26.2rem", }}>
                             <VideoCardTitle>
-                                    Video 1
+                                    Dancing Hills
                             </VideoCardTitle>
                             </Box>
+                            <YoutubeEmbed  embedId="S8GQkkzyhsw"/>
+                     
                             </VideoContainer>
 
                         
@@ -53,16 +53,16 @@ const VideoCardSection = (id) => {
 
 
 
-                    <Grid item xs={6}>
-                    <CardContainer style={{marginTop:"15rem"}}>
+                    <Grid item md={6} xs={12}>
+                    <CardContainer >
                         <VideoContainer>
-                                
-                            <YoutubeEmbed  embedId="f_6_m5PczBo"/>
-                            <Box sx={{ bgcolor:"black", height:'5rem', width:"26.2rem", }}>
+                        <Box sx={{ bgcolor:"black", height:'5rem', width:"26.2rem", marginTop:"0px" }}>
                             <VideoCardTitle>
-                                    Video 1
+                                    Psycho Killer Cover
                             </VideoCardTitle>
                             </Box>
+                            <YoutubeEmbed  embedId="u6Khp12BeOU"/>
+                           
                             </VideoContainer>
 
                         
@@ -71,16 +71,16 @@ const VideoCardSection = (id) => {
 
 
 
-                    <Grid item xs={6}>
-                    <CardContainer style={{marginTop:"15rem"}}>
+                    <Grid item md={6} xs={12}>
+                    <CardContainer >
                         <VideoContainer>
-                                
-                            <YoutubeEmbed  embedId="f_6_m5PczBo"/>
-                            <Box sx={{ bgcolor:"black", height:'5rem', width:"26.2rem", }}>
+                        <Box sx={{ bgcolor:"black", height:'5rem', width:"26.2rem", }}>
                             <VideoCardTitle>
-                                    Video 1
+                                    Amble On Through
                             </VideoCardTitle>
                             </Box>
+                            <YoutubeEmbed  embedId="ouEI_hAgZLg"/>
+                         
                             </VideoContainer>
 
                         

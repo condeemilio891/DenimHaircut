@@ -3,18 +3,19 @@ import styled from "styled-components";
 
 
 export const MainTitle = styled.h1 ` 
-
+color:whitesmoke;
 font-size: 4rem;
 display: flex;
 align-items: center;
 justify-content:center;
+margin-bottom: 0px;
 `
 
 export const CardContainer=styled.div `
 width:300px;
 box-shadow: 0px 0px 15px -5px;
 animation: ease-in;
-margin-top: 1rem;
+margin-top: 10rem;
 
 &:hover{
     transform: scale(1.1);
