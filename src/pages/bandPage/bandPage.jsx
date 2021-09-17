@@ -6,8 +6,11 @@ import HeroSection from '../../Components/HeroSection'
 import InfoSection from "../../Components/InfoSection"
 import TourDates from '../../Components/TourDates'
 import MyCarousel from '../../Components/Carosel/Carousel'
+import VideoCardSection from '../../Components/VideoSection'
 import { homeObjOne } from '../../Components/InfoSection/Data'
 import { tourRouterData } from '../../Components/TourDates/Data'
+import { videoRouter} from '../../Components/VideoSection/Data'
+
 const Home = () => {
     const[isOpen, setIsOpen]=useState(false)
 
@@ -23,7 +26,8 @@ const Home = () => {
 
         <InfoSection {...homeObjOne}/>
         <TourDates {...tourRouterData}/>
-        <MyCarousel/>
+       
+        <VideoCardSection {...videoRouter}/>
       
         </>
     )
