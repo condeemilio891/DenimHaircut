@@ -2,4 +2,15 @@
   box-sizing: border-box;
   margin:0;
   padding: 0;
+  font-family: "Mandhor",sans-serif,"Moonshine","BeautifulPeople","Zaytun";
+  
 }
+
+
+@font-face{
+  font-family: "Mandhor";
+  
+  src:local('Mandhor') url(./assets/fonts/Mandhor-ALEmp.otf) format('opentype');
+  
+}
+

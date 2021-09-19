@@ -82,8 +82,10 @@ display:flex;
 align-items:center;
 text-decoration: none;
 padding:0 1rem; 
-height: 100%auto;
+font-family: "Moonshine";
+height: 100% auto;
 cursor:pointer;
+
 
 &.active{
     border-bottom:3px solid #6f1d1b
