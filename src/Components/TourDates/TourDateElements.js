@@ -59,11 +59,20 @@ transition: .5s;
    }
 `
 
+export const TourDatesTitle= styled.h1`
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+font-family: "Mandhor";
+
+`
 export const ListGroupDate= styled.p`
 
 display:flex;
 font-size: larger;
 font-weight: bold;
+font-family: "Mandhor";
 color:#370617;
 align-items: center;
 justify-content: space-between;
@@ -71,6 +80,7 @@ padding-right: 10rem;
 `
 export const ListGroupHeading= styled.h1`
 display:flex;
+font-family: "Mandhor";
 font-size: larger;
 font-weight: bold;
 color:#370617;

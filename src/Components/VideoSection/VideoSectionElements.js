@@ -88,17 +88,18 @@ font-size: 2rem;
 
 
 export const BottomText= styled.h1` 
-color: #0B0080;
+color: black;
 display: flex;
 align-items: center;
 justify-content: center;
 margin-top: 17rem;
 font-size: 2rem;
 margin-right: 7rem;
+
 &:hover {
         transition: all 0.2s ease-in-out;
-        background: #fff;
-        color: #010606;
-        transform: scale(1.2)
+        color: white;
+        transform: scale(1.2);
+        background:black;
     }
 `
