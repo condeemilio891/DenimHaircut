@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import { ListGroup, ListGroupItem,ListGroupBody,ListGroupDate,ListGroupHeading,HeroBtnWrapper,ArrowForward,ArrowRight } from '../../Components/TourDates/TourDateElements'
+import { ListGroup,TourDatesTitle, ListGroupItem,ListGroupBody,ListGroupDate,ListGroupHeading,HeroBtnWrapper,ArrowForward,ArrowRight } from '../../Components/TourDates/TourDateElements'
 import { Button } from '../ButtonElement'
 
 const TourDates = ({id}) => {
@@ -15,9 +15,9 @@ const TourDates = ({id}) => {
         <>
         <ListGroupBody id={id}>
             <ListGroup>
-                <ListGroupItem>
-                 TourDates
-                </ListGroupItem>
+                
+                <TourDatesTitle>Tour Dates</TourDatesTitle>
+               
                 <ListGroupItem>
                     <ListGroupDate>Sep 7 2021</ListGroupDate>
                  <ListGroupHeading>The Lost Well</ListGroupHeading>

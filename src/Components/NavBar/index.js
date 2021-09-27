@@ -61,6 +61,13 @@ const toggleHome=() =>{
                         </NavLinks>
                     </NavItem>
                     <NavItem>
+                        <NavLinks to="videos"
+                        smooth={true} duration={500} spy={true}
+                        exact="true" offset={-80}>
+                           Videos
+                        </NavLinks>
+                    </NavItem>
+                    <NavItem>
                         <NavLinks to="tourDates"
                           smooth={true} duration={500} spy={true}
                           exact="true" offset={-80}
@@ -68,13 +75,7 @@ const toggleHome=() =>{
 
                         </NavLinks>
                     </NavItem>
-                    <NavItem>
-                        <NavLinks to="videos"
-                        smooth={true} duration={500} spy={true}
-                        exact="true" offset={-80}>
-                           Videos
-                        </NavLinks>
-                    </NavItem>
+                   
 
 
                     <NavIconUl>

@@ -1,17 +1,19 @@
 import React from 'react'
-import { CardContainer,VideoContainer,VideoCardTitle,MainTitle } from './VideoSectionElements'
+import { CardContainer,VideoContainer,VideoCardTitle,MainTitle,MyContainer,BottomText } from './VideoSectionElements'
 import YoutubeEmbed from '../VideoCardSection/YoutubeEmbed'
 import Container from "@mui/material/Container"
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 
+
 const VideoCardSection = (id) => {
     return (
         <>
-        
-        <Container maxWidth="md" id="videos">
-          
-        <Box sx={{ bgcolor: 'black', height: '100vh' }} >
+      
+        <Container>
+        <MyContainer maxWidth="md" id="videos">
+         
+      
            
         <MainTitle>Videos</MainTitle>
 
@@ -20,7 +22,7 @@ const VideoCardSection = (id) => {
                     <Grid item md={6} xs={12}>
                     <CardContainer>
                         <VideoContainer>
-                        <Box sx={{ bgcolor:"black", height:'5rem', width:"26.2rem", }}>
+                        <Box sx={{ bgcolor:"black", height:'5rem', width:"26.2rem",}}>
                             <VideoCardTitle>
                                     War Pigs Cover
                             </VideoCardTitle>
@@ -72,7 +74,7 @@ const VideoCardSection = (id) => {
 
 
                     <Grid item md={6} xs={12}>
-                    <CardContainer >
+                    <CardContainer>
                         <VideoContainer>
                         <Box sx={{ bgcolor:"black", height:'5rem', width:"26.2rem", }}>
                             <VideoCardTitle>
@@ -83,14 +85,19 @@ const VideoCardSection = (id) => {
                          
                             </VideoContainer>
 
-                        
-                    </CardContainer>
+                        </CardContainer>
+                    
                     </Grid>
             
 
             </Grid>
-            </Box>
+            <a href="https://soundcloud.com/denim-haircut">
+            <BottomText> All Music </BottomText>
+            </a>
+            </MyContainer>
+         
             </Container>
+            
         </>
     )
 }

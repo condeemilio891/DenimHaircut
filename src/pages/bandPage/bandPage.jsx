@@ -23,12 +23,9 @@ const Home = () => {
         <SideBar isOpen={isOpen} toggle={toggle}/>
         <NavBar toggle={toggle}/>
         <HeroSection/>
-
         <InfoSection {...homeObjOne}/>
-        <TourDates {...tourRouterData}/>
-       
         <VideoCardSection {...videoRouter}/>
-      
+        <TourDates {...tourRouterData}/>
         </>
     )
 }
