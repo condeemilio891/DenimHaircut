@@ -2,7 +2,7 @@ import React from "react";
 import NavBar from "./Components/NavBar"
 import Home from "./pages/bandPage/bandPage";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
-import storePage from "./pages/storePage";
+import storePage from "./pages/storePage/storePage";
 
 
 
