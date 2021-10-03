@@ -1,14 +1,19 @@
 import React from 'react'
-import { StorePageBG,StorePageTitle,TitleContainer } from './storePageElements';
+import { StorePageBG,StorePageTitle,TitleContainer,ShopIcon } from './storePageElements';
 import GlassCard from '../../Components/GlassCard/GlassCard'
 import jackalope from "../../assets/images/jackalope.png"
 import Grid from '@mui/material/Grid';
+import "./storePageStyle.css"
+import {FaShoppingCart} from 'react-icons/fa'
 
 function storePage() {
     return (
         <>
         <TitleContainer>
                     <StorePageTitle>Denim Haircut</StorePageTitle>
+                        <ShopIcon>
+                        <FaShoppingCart value={{className:"shoppingIcon"}}/>
+                        </ShopIcon>
                 </TitleContainer>
         <StorePageBG >
           

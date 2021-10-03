@@ -1,0 +1,16 @@
+.shoppingIcon{
+float:right;
+
+}
+
+
+
+
+@font-face{
+    font-family: "Mandhor";
+    
+    src:local('Mandhor') url(../../assets/fonts/Mandhor-ALEmp.otf) format('opentype');
+    
+  }
+  
+  
