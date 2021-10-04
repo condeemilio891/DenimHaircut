@@ -28,10 +28,12 @@ const ProductPage = ()=> {
         setCart(cart)
     }
 
-    const handleUpdateCartQty= async(productId,quantity)=>{
-        const {cart}=await commerce.cart.add(productId, {quantity})
-        setCart(cart)
-    }
+    const handleUpdateCartQty = async (lineItemId, quantity) => {
+        const response = await commerce.cart.update(lineItemId, { quantity });
+    
+        setCart(response.cart);
+      };
+    
 
     const handleRemoveFromCart = async (lineItemId) => {
         const response = await commerce.cart.remove(lineItemId);
