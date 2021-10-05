@@ -14,15 +14,17 @@ const AddressForm = ({checkoutToken}) => {
     const [shippingOption, setShippingOption] = useState('');
     const methods= useForm();
 
-    // const fetchShippingCountries= async (checkoutTokenId)=>{
+    const fetchShippingCountries= async (checkoutTokenId)=>{
 
-    //     const {countries}= await commerce.services.localeListCountries(checkoutTokenId);
+        const {countries}= await commerce.services.localeListCountries(checkoutTokenId);
 
-    //     setShippingCountries(countries)
-    // }
+        setShippingCountries(countries)
+    }
     
 
- 
+    useEffect(() => {
+        fetchShippingCountries(checkoutToken.id);
+      }, []);
     return (
         <>
             <Typography varient="h6" gutterBottom> Shipping Address</Typography>
@@ -37,15 +39,17 @@ const AddressForm = ({checkoutToken}) => {
                         <FormInput required name='zip' label='Zip/postal Code'/>
 
 
-                            {/* <Grid item xs={12} sm={6}>
-                                <InputLabel> Shipping Country</InputLabel>
-                                <Select value={} fullWidth onChange={}>
-                                    <MenuItem key={} value={}>
-                                        Select
-                                    </MenuItem>
+                        <Grid item xs={12} sm={6}>
+                            <InputLabel>Shipping Country</InputLabel>
+                                <Select value={shippingCountry} fullWidth onChange={(e) => setShippingCountry(e.target.value)}>
+                                    {Object.entries(shippingCountries).map(([code, name]) => ({ id: code, label: name })).map((item) => (
+                                     <MenuItem key={item.id} value={item.id}>
+                                            {item.label}
+                                        </MenuItem>
+                                         ))}
                                 </Select>
-                            </Grid>
-                            <Grid item xs={12} sm={6}>
+                        </Grid>
+                            {/* <Grid item xs={12} sm={6}>
                                 <InputLabel> Shipping Subdivisions</InputLabel>
                                 <Select value={} fullWidth onChange={}>
                                     <MenuItem key={} value={}>
