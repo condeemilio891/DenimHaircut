@@ -20,8 +20,8 @@ const StoreNavbar = ({totalItems}) => {
                 <div className={classes.grow}/>
                 {location.pathname ==="/store" && (
                 <div className={classes.button}>
-                    <Link to="/store/store">go to cart</Link>
-                    <IconButton  component={Link} aria-label="show cart Items" color="inherit">
+                    {/* <Link to="/store/cart">go to cart</Link> */}
+                    <IconButton  component={Link} to="store/cart" aria-label="show cart Items" color="inherit">
                         <Badge badgeContent={totalItems} color="secondary">
                             <MdShoppingCart/>
 
