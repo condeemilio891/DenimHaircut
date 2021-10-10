@@ -6,7 +6,7 @@ import {Link} from "react-router-dom"
 import { commerce } from '../../lib/commerce';
 
 
-const AddressForm = ({checkoutToken, next,nextStep}) => {
+const AddressForm = ({checkoutToken, next,nextStep,test}) => {
     const [shippingCountries, setShippingCountries] = useState([]);
     const [shippingCountry, setShippingCountry] = useState('');
     const [shippingSubdivisions, setShippingSubdivisions] = useState([]);
@@ -50,7 +50,7 @@ const AddressForm = ({checkoutToken, next,nextStep}) => {
         <>
             <Typography varient="h6" gutterBottom> Shipping Address</Typography>
             <FormProvider {...methods}>
-                <form onSubmit={methods.handleSubmit((data)=>nextStep({...data,shippingCountry,shippingSubdivision,setShippingOption}))}>
+                <form onSubmit={methods.handleSubmit((data)=>test({...data,shippingCountry,shippingSubdivision,setShippingOption}))}>
                     <Grid container spacing={3}>
                         <FormInput required name='firstName' label='First name'/>
                         <FormInput required name='lastName' label='Last name'/>
@@ -92,12 +92,12 @@ const AddressForm = ({checkoutToken, next,nextStep}) => {
             </Grid>
                     </Grid>
 
-
+                    <Button type="submit" varient="contained" color="primary">Next</Button>
                 </form>
                 <br/>
                 <div style={{display:'flex', justifyContent:"space-between"}}></div>
                     <Button component={Link} to="/store/cart" varient="outlined">Back to Cart</Button>
-                    <Button type="submit" varient="contained" color="primary">Next</Button>
+                   
             </FormProvider>
         </>
     )
